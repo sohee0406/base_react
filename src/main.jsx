@@ -7,6 +7,7 @@ import BaseEx from "./pages/day03/components/BaseEx";
 import Day04 from "./pages/day04/Day04";
 import Day05 from "./pages/day05/Day05";
 import Day06 from "./pages/day06/Day06";
+import Day07 from "./pages/day07/Day07";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -16,6 +17,7 @@ createRoot(document.getElementById("root")).render(
     {/* <BaseEx /> */}
     {/* <Day04 /> */}
     {/* <Day05 /> */}
-    <Day06 />
+    {/* <Day06 /> */}
+    <Day07 />
   </StrictMode>,
 );
