@@ -69,7 +69,9 @@ export default function Login() {
 
         <div className="mt-5 flex justify-center items-center ">
           <h1>계정이 없으신가요?</h1>
-          <span className=" ml-1 text-blue-600 cursor-pointer">회원가입 →</span>
+          <span className=" ml-1 text-blue-600 cursor-pointer">
+            <Link to={"/SignUp"}>회원가입 →</Link>
+          </span>
         </div>
       </form>
     </div>

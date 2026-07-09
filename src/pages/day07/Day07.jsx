@@ -1,23 +1,19 @@
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import Main from "./pages/Main";
 import Login from "./pages/Login";
-import Main from "../day06/pages/Main";
 import SignUp from "./pages/SignUp";
 
 export default function Day07() {
   return (
-    <div>
-      <HashRouter>
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/Login" element={<Login />} />
-          <Route path="/SignUp" element={<SignUp />} />
-        </Routes>
-      </HashRouter>
-      <Login />
-    </div>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/SignUp" element={<SignUp />} />
+      </Routes>
+    </HashRouter>
   );
 }
-
 // 로그인 회원가입 만들기
 // 아이디 이메일 패스워드 이름
 // 두페이지 버튼으로 왔다갔다 하는거

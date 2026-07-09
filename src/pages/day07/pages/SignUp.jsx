@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import ErrorMessage from "../components/ErrorMessage";
+import { Link } from "react-router-dom";
 
 export default function SignUp() {
   const {
@@ -89,6 +90,13 @@ export default function SignUp() {
         >
           Login
         </button>
+
+        <div className="mt-5 flex justify-center items-center ">
+          <h1>계정이 있으신가요?</h1>
+          <span className=" ml-1 text-blue-600 cursor-pointer">
+            <Link to={"/Login"}>로그인 →</Link>
+          </span>
+        </div>
       </form>
     </div>
   );
